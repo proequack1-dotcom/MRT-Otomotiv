@@ -39,3 +39,35 @@ sonuc="❌ Bu arıza kodu veri tabanında bulunamadı. Lütfen MRT Otomotiv ile 
 document.getElementById("sonuc").innerHTML=sonuc;
 
 }
+
+function aramaYap() {
+
+let kod = document.getElementById("aramaKutusu").value.toUpperCase();
+
+let veri = arizaKodlari[kod];
+
+if(veri){
+
+document.getElementById("sonuc").innerHTML = `
+<h3>${kod}</h3>
+
+<p><b>Anlamı:</b> ${veri.anlam}</p>
+
+<p><b>Belirtiler:</b> ${veri.belirti}</p>
+
+<p><b>Olası Neden:</b> ${veri.neden}</p>
+
+<p><b>Tahmini Süre:</b> ${veri.sure}</p>
+
+`;
+
+}else{
+
+document.getElementById("sonuc").innerHTML = `
+<h3>❌ Arıza kodu bulunamadı.</h3>
+<p>Lütfen kodu kontrol edin veya MRT Otomotiv ile iletişime geçin.</p>
+`;
+
+}
+
+}
