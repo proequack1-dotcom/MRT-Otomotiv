@@ -140,3 +140,101 @@ padding:15px;
 border-bottom:1px solid #333;
 }
 }
+
+/* ===== Galeri ===== */
+
+#galeri{
+    padding:60px 20px;
+    text-align:center;
+}
+
+#galeri h2{
+    font-size:36px;
+    margin-bottom:30px;
+    color:#ffffff;
+}
+
+.galeri{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.galeri img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.5);
+    transition:.4s;
+}
+
+.galeri img:hover{
+    transform:scale(1.05);
+    box-shadow:0 15px 35px rgba(255,255,255,.2);
+}
+
+/* ===== Marka Kartları ===== */
+
+.marka-kartlari{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    margin-top:30px;
+}
+
+.marka{
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(12px);
+    border:1px solid rgba(255,255,255,0.15);
+    border-radius:18px;
+    padding:25px;
+    text-decoration:none;
+    color:#fff;
+    transition:.4s;
+    box-shadow:0 8px 25px rgba(0,0,0,.4);
+}
+
+.marka h3{
+    margin:0 0 10px;
+    font-size:28px;
+}
+
+.marka p{
+    color:#d0d0d0;
+}
+
+.marka:hover{
+    transform:translateY(-8px);
+    background:rgba(255,255,255,0.15);
+    border-color:#ffffff;
+    box-shadow:0 15px 40px rgba(255,255,255,.15);
+}
+
+#ariza{
+    text-align:center;
+    padding:60px 20px;
+}
+
+#kod{
+    width:300px;
+    max-width:90%;
+    padding:15px;
+    border-radius:10px;
+    border:none;
+    font-size:18px;
+}
+
+#ariza button{
+    padding:15px 30px;
+    margin-left:10px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:18px;
+}
+
+#sonuc{
+    margin-top:30px;
+    font-size:20px;
+}
